@@ -45,7 +45,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Checkout Repository
-            id: code-coverage
             uses: actions/checkout@v4
           
           - name: Setup NodeJS Version
