@@ -40,11 +40,12 @@ jobs:
             path: test-results.xml
 
 
-    new-job:
-        name: new-job
+    code-coverage:
+        name: code-coverage
         runs-on: ubuntu-latest
         steps:
           - name: Checkout Repository
+            id: code-coverage
             uses: actions/checkout@v4
           
           - name: Setup NodeJS Version
